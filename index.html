@@ -1,35 +1,66 @@
 <!DOCTYPE html> 
-<html>
+<html> 
   <head> 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Aaron Percival's Portfolio</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width:695px)" href="styles/over695.css"> 
+    <link rel="stylesheet" media="screen and (min-width:950px)" href="styles/desktop.css"> 
+    <link rel="stylesheet" media="screen and (min-width:1100px)" href="styles/over1100.css"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet"> 
+    <title>Aaron Percival's Portfolio</title> 
   </head> 
   <body>
-    <aside>
-    </aside> 
-    <div id="main-body">       
-      <header> 
-        <p id="logo">&emsp;AP</p> 
-        <div id="name-container">
-          <p id="name">AARON PERCIVAL</p> 
-          <p id="title">SOFTWARE ENGINEER</p> 
-        </div>
-      </header>  
-      <main>
-        <div id="rift"></div> 
-        <img id="face" src="images/face.jpg" alt="Aaron's face">
-        <section id="attributes"> 
-          <p class="attribute">Enthusiastic Coder</p>
-          <p class="attribute">Life-Long Learner</p>
-          <p class="attribute">Returned from Peace Corps</p>
-          <p class="attribute">Seeks Happiness</p> 
-        </section>
-      </main> 
+    <img class=outside-body src="images/fabric-background.jpg" alt="grey texture">
+    <div class="container"> 
+      <div class="main-desktop"> 
+        <header class="box"> 
+          <p class="logo logo-695">&emsp;AP</p> 
+          <div class="name-container name-container-695"> 
+            <p id="name">AARON PERCIVAL</p> 
+            <p id="title">SOFTWARE ENGINEER</p> 
+          </div>
+        </header>
+        <main class="box">
+          <img class="compsci compsci-695 compsci-desktop" src="images/compsci.jpg" alt="Comp Sci photo">  
+        </main> 
+        <div class="box"> 
+          <p class="box work-header work-header-695">FEATURED WORK</p> 
+          <div class="box work-pictures">
+            <article class="work-article"> 
+              <img class="work-image work-image-695" src="images/redFlower.jpeg" alt="red flower"> 
+              <p class="work-text">https://github.com/topdreg/redflower</p> 
+            </article>
+            <article class="work-article">
+              <img class="work-image work-image-695" src="images/yellowFlower.jpg" alt="white flower"> 
+              <p class="work-text">https://github.com/topdreg/yellowflower</p>
+            </article>
+            <article class="work-article">
+              <img class="work-image work-image-695" src="images/whiteFlower.jpeg" alt="yellow flower"> 
+              <p class="work-text">https://github.com/topdreg/whiteflower</p> 
+            </article>
+          </div> 
+        </div> 
+      </div>
+      <footer class="interests-desktop">  
+        <p class="box interest-header interest-header-695">INTERESTS</p> 
+        <div class="box interest-pictures">
+          <article class="interest-article">
+            <img class="interest interest-695" src="images/bouldering.jpg" alt="bouldering">
+            <p class="interest-text interest-text-695">Climbing</p> 
+          </article>
+          <article class="interest-article">
+            <img class="interest interest-695" src="images/game.jpg" alt="game"> 
+            <p class="interest-text interest-text-695">Gaming</p>
+          </article>
+          <article class="interest-article">
+            <img class="interest interest-695" src="images/cooking.jpg" alt="cooking"> 
+            <p class="interest-text interest-text-695">Cooking</p> 
+          </article>
+        </div> 
+      </footer> 
     </div> 
-  </body>
+  </body> 
 </html> 

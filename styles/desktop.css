@@ -1,0 +1,21 @@
+.main-desktop {
+  width: 85%;
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.interests-desktop {
+  order: -1; 
+  width: 15%;
+  display: flex; 
+  flex-wrap: wrap;
+  margin-top: 90px;
+  margin-bottom: 320px;
+}
+
+.compsci-desktop {
+  height: 500px;
+  order: 0;
+}
+
+

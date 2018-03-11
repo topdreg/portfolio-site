@@ -1,93 +1,125 @@
-html, body {
-  margin: 0; 
-  padding: 0; 
+img, embed,
+object, video {
+  max-width: 100%;
 }
 
-body {
-  display: flex;
-}
-
-aside { 
-  width: 10%;
-  order: 1; 
-}
-
-#main-body {
-  width: 90%;
-  order: 2; 
-}
-
-header {  
-  display: flex;
-  justify-content: space-between;
+.outside-body {
+  position: absolute; 
+  z-index: -1; 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  visibility: hidden; 
 }
 
 .container { 
-  display: flex;  
+  width: 100%; 
+  display: flex; 
+  flex-wrap: wrap;
 }
 
-#space1 {
-  float: left; 
+.box {
+  width: 100%; 
 }
 
-#logo {
-  float: left;
-  font-size: 85px;
-  margin: 0;
+header { 
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: grey;
+}
+
+.logo { 
+  font-size: 40px;
+  margin: 0; 
   font-family: 'Clicker Script', cursive; 
+  text-align: left; 
 }
 
-#name-container {
-  float: right;
+.name-container { 
+  margin: 0; 
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 20px;
   text-align: right; 
 }
 
 #name {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 60px;
-  margin: 0;  
-}
-
-#title { 
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px; 
   margin: 0; 
 }
 
-#rift { 
-  background-color: #121268;
-  position: relative; 
-  z-index: 0; 
-  display: block; 
-  border: 0;
-  padding: 0;
+#title {
   margin: 0; 
-  overflow: hidden;
+}
+
+main {
+  margin-top: 5px;   
+}
+
+.compsci {
+  height: 200px;
   width: 100%;
-  height: 600px; 
+  margin-top: 5px;
 }
 
-#face {
-  position: absolute;
-  z-index: 1;
-  resize: both; 
-  width: 250px; 
-  height: auto;
-  top: 230px;
-  left: 300px;
-  border: 5px solid white;
-  border-radius: 90px; 
+.interest-article {
+  width: 75px; 
+  word-wrap: break-word;
 }
 
-#attributes {
-  position: absolute;
-  z-index: 1;
-  top: 220px; 
-  right: 250px; 
+.interest-header { 
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Iceland', cursive; 
+
 }
 
-.attribute {
-  font-size: 40px; 
-  color: white;
+.interest-pictures {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+}
+
+.interest {
+  height: 75px; 
+  width: 75px;
+}
+
+.interest-text {
+  text-align: center;
+  margin-top: 2px;
   font-family: 'Iceland', cursive;
+}
+
+.work-text {
+  text-align: center;
+  margin-top: 2px;
+}
+
+.work-article {
+  width: 100px;
+  word-wrap: break-word;
+}
+
+.work-header {
+  font-size: 18px; 
+  text-align: center;
+  color: grey;
+}
+
+.work-pictures {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+}
+
+.work-image {
+  height: 100px;
+  width: 100px; 
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto; 
+  width: 75%;
 }
